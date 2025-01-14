@@ -1,0 +1,13 @@
+{
+  "name": "password-reset-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for AD password reset application",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  }
+}
