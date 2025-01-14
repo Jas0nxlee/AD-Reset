@@ -185,7 +185,7 @@ POST /api/reset-password
 
 1. 克隆项目
 ```bash
-git clone https://github.com/your-repo/password-reset.git
+git clone https://github.com/Jas0nxlee/AD-Reset.git
 cd password-reset
 ```
 
