@@ -1,4 +1,4 @@
-# Domain Account Password Reset System
+# LDAP/AD Account Password Reset System
 
 [![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-Latest-green.svg)](https://flask.palletsprojects.com/)

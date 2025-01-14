@@ -1,4 +1,4 @@
-# 域账号密码重置系统
+# 域账号密码重置系统(LDAP/AD)
 
 [English Version](README_EN.md)
 
