@@ -1,29 +1,19 @@
-version: '3.8'
-
 services:
   backend:
-    build: ./backend
+    build:
+      context: ..
+      dockerfile: docker/backend/Dockerfile
+    container_name: ad-reset-backend
     ports:
-      - "5000:5000"
-    depends_on:
-      - redis
-    restart: always
-
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
-    restart: always
-
-  redis:
-    image: redis:alpine
-    ports:
-      - "6379:6379"
+      - "5001:5001"
     volumes:
-      - redis_data:/data
-    restart: always
+      - ../backend/logs:/app/logs
+    env_file:
+      - ../.env
+    restart: unless-stopped
+    networks:
+      - ad-reset-network
 
-volumes:
-  redis_data:
+networks:
+  ad-reset-network:
+    driver: bridge
